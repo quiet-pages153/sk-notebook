@@ -1,7 +1,7 @@
 /* 나의 말씀노트 서비스워커 (이 앱 캐시 mynote- 만 지워요)
    CORE: 앱 화면·아이콘 (새 버전마다 새로 받음)
    STATIC: 성경·글꼴 (내용이 바뀌지 않으면 다시 받지 않음 · 글꼴은 파일 이름에 내용 표시가 붙어 있음) */
-const CORE='mynote-core-v25-03606fcb',STATIC='mynote-static-3ce3cc03';
+const CORE='mynote-core-v26-7f10d6bf',STATIC='mynote-static-3ce3cc03';
 const COREF=["./", "index.html", "manifest.webmanifest", "apple-touch-icon.png", "icon-192.png", "icon-512.png", "maskable-512.png"],STATICF=["NotoSerifKR-500.f7bd1622.woff2", "NotoSerifKR-700.08911847.woff2", "poor-story.83487869.woff2", "gowun-dodum.a7489181.woff2", "dm-serif.157313bd.woff2", "pret-Regular.89f1d362.woff2", "pret-SemiBold.7a08d4b0.woff2"];
 self.addEventListener('install',e=>{e.waitUntil((async()=>{
   const c=await caches.open(CORE);await c.addAll(COREF.map(f=>new Request(f,{cache:'reload'})));
