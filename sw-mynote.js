@@ -2,7 +2,7 @@
    v33: 이 앱 주소(/SK-notebook/)에서만 설치 · 다른 앱 화면이 올라오면 저장해 둔 화면으로 · 정리는 이 앱 주소만
    CORE: 앱 화면·아이콘 (새 버전마다 새로 받음)
    STATIC: 성경·글꼴 (내용이 바뀌지 않으면 다시 받지 않음 · 글꼴은 파일 이름에 내용 표시가 붙어 있음) */
-const CORE='mynote-core-v35-fb739b2d',STATIC='mynote-static-1f5f3545';
+const CORE='mynote-core-v36-7d7a845a',STATIC='mynote-static-1f5f3545';
 const COREF=["./", "index.html", "manifest.webmanifest", "apple-touch-icon.png", "icon-192.png", "icon-512.png", "maskable-512.png"],STATICF=["NotoSerifKR-500.f7bd1622.woff2", "NotoSerifKR-700.08911847.woff2", "pret-Regular.89f1d362.woff2", "pret-SemiBold.7a08d4b0.woff2"];
 const MINE=/\/sk-notebook\/$/i.test(new URL(self.registration.scope).pathname),ID='content="sk-notebook"';
 self.addEventListener('install',e=>{e.waitUntil((async()=>{
